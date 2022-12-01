@@ -23,8 +23,8 @@ return string.charAt(0);
 };
 
 function firstCharacters (string, n) {
-return string.charAt(0,1,2,3);
-return string.chatAt(0-1);
+return string.slice(0,n);
+
 };
 
 module.exports = {
