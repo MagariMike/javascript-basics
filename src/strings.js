@@ -1,25 +1,30 @@
+const { getSupportInfo } = require("prettier");
+
 function sayHello (string) {
 return "Hello, " + string + '!';
+return 'Hello' + string + '!';
+return 'Hello' + string;
  };
 
 function uppercase (string) {
-  return 
+  return string.toUpperCase();
 };
 
 function lowercase (string) {
-  // your code here
+return string.toLowerCase();
 };
 
 function countCharacters (string) {
-  // your code here
+return string.length;
 };
 
 function firstCharacter (string) {
-  // your code here
+return string.charAt(0);
 };
 
 function firstCharacters (string, n) {
-  // your code here
+return string.charAt(0,1,2,3);
+return string.chatAt(0-1);
 };
 
 module.exports = {
