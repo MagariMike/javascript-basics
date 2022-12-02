@@ -66,23 +66,34 @@ function isOdd(a) {
 };
 
 function isEven(a) {
-  // your code here
+  if (a % 2 === 0){
+    return true;
+  }
+  else {
+    return false;
+  }
 };
 
 function isSquare(a) {
-  // your code here
+
 };
 
 function startsWith(char, string) {
-  // your code here
+  if (string.startsWith(char))
+  {
+    return true;
+  }
+  else {
+    return false;
+  }
 };
 
 function containsVowels(string) {
-  // your code here
+  
 };
 
 function isLowerCase(string) {
-  // your code here
+  
 };
 
 module.exports = {
