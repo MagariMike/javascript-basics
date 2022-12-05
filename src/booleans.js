@@ -89,11 +89,24 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  
+  if (string.includes("a")) {
+    return true;
+  }
+ else if (string.includes('O')) {
+  return true;
+ }
+ else {
+  return false;
+ }
 };
 
 function isLowerCase(string) {
-  
+  if (string.isLowerCase()) {
+    return true;
+  }
+  else {
+    return false;
+  }
 };
 
 module.exports = {
