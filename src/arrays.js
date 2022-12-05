@@ -15,22 +15,29 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  
+  array.splice(index, 1);
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  const nonono = numbers.map(num => {
+    return String(num);
+  });
+  return nonono;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const upper = strings.map(element => {
+    return element.toUpperCase();
+  });
+  return upper;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  
 };
 
 const onlyEven = numbers => {
