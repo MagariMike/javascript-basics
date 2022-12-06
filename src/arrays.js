@@ -1,6 +1,7 @@
 const getNthElement = (index, array) => {
   return array[index];
 };
+// ABOVE NEEDS LOOKING AT*/
 
 const arrayToCSVString = array => { 
   return array.toString();
@@ -41,7 +42,7 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  // your code here
+  
 };
 
 const removeNthElement2 = (index, array) => {
