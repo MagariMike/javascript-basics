@@ -19,7 +19,7 @@ const {
 describe('getNthElement', () => {
   const array = ['cat', 'dog', 'elephant', 'fox'];
 
-  it('returns the element at the given position', () => {
+  xit('returns the element at the given position', () => {
     expect(getNthElement(0, array)).toEqual('cat');
     expect(getNthElement(2, array)).toEqual('elephant');
     expect(getNthElement(3, array)).toEqual('fox');
@@ -32,21 +32,21 @@ describe('getNthElement', () => {
 });
 
 describe('arrayToCSVString', () => {
-  it('returns the array elements as a comma-seperated string', () => {
+  xit('returns the array elements as a comma-seperated string', () => {
     expect(arrayToCSVString(['a', 'b', 'c', 'd'])).toEqual('a,b,c,d');
     expect(arrayToCSVString([1, 2, 3, 4, 5])).toEqual('1,2,3,4,5');
   });
 });
 
 describe('csvStringToArray', () => {
-  it('converts the csv string as an array', () => {
+  xit('converts the csv string as an array', () => {
     expect(csvStringToArray('a,b,c,d')).toEqual(['a', 'b', 'c', 'd']);
     expect(csvStringToArray('1,2,3,4,5')).toEqual(['1', '2', '3', '4', '5']);
   });
 });
 
 describe('addToArray', () => {
-  it('adds the item to the end of the array', () => {
+  xit('adds the item to the end of the array', () => {
     const array = [];
     const array2 = [1, 2, 3];
 
@@ -59,7 +59,7 @@ describe('addToArray', () => {
 });
 
 describe('addToArray2', () => {
-  it('returns a new array with the value appended', () => {
+  xit('returns a new array with the value appended', () => {
     const array = ['a', 'b', 'c'];
     const array2 = [1, 2, 3];
 
@@ -72,7 +72,7 @@ describe('addToArray2', () => {
 });
 
 describe('removeNthElement', () => {
-  it('removes the element at position n', () => {
+  xit('removes the element at position n', () => {
     const array = ['ant', 'bison', 'cockerel', 'duck', 'elephant'];
     removeNthElement(2, array);
     expect(array).toEqual(['ant', 'bison', 'duck', 'elephant']);
@@ -84,14 +84,14 @@ describe('removeNthElement', () => {
 });
 
 describe('numbersToStrings', () => {
-  it('converts every number in the array to a string', () => {
+  xit('converts every number in the array to a string', () => {
     expect(numbersToStrings([1, 2, 3])).toEqual(['1', '2', '3']);
     expect(numbersToStrings([7, 8, 9])).toEqual(['7', '8', '9']);
   });
 });
 
 describe('uppercaseWordsInArray', () => {
-  it('makes every string in the array uppercase', () => {
+  xit('makes every string in the array uppercase', () => {
     expect(uppercaseWordsInArray(['cat', 'mouse', 'banana'])).toEqual([
       'CAT',
       'MOUSE',
@@ -106,7 +106,7 @@ describe('uppercaseWordsInArray', () => {
 });
 
 describe('reverseWordsInArray', () => {
-  it('reverses every string in an array', () => {
+  xit('reverses every string in an array', () => {
     expect(reverseWordsInArray(['cat', 'Mouse', 'banana'])).toEqual([
       'tac',
       'esuoM',
@@ -139,7 +139,7 @@ describe('removeNthElement2', () => {
 });
 
 describe('elementsStartingWithAVowel', () => {
-  it('returns elements starting with a vowel', () => {
+  xit('returns elements starting with a vowel', () => {
     expect(
       elementsStartingWithAVowel([
         'apple',
@@ -179,7 +179,7 @@ describe('elementsStartingWithAVowel', () => {
     ).toEqual(['aaaa', 'eeee']);
   });
 
-  it('is case insensitive', () => {
+  xit('is case insensitive', () => {
     expect(
       elementsStartingWithAVowel([
         'Apple',

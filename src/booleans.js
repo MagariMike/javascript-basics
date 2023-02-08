@@ -75,6 +75,11 @@ function isEven(a) {
 };
 
 function isSquare(a) {
+  if (Math.sqrt(a) % 1 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 
 };
 
@@ -101,12 +106,7 @@ function containsVowels(string) {
 };
 
 function isLowerCase(string) {
-  if (string.isLowerCase()) {
-    return true;
-  }
-  else {
-    return false;
-  }
+ return string === string.toLowerCase();
 };
 
 module.exports = {

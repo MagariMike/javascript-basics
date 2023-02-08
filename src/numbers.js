@@ -35,7 +35,7 @@ function absolute (a) {
 }
 
 function quotient (a, b) {
-  return Math.floor(a / b);
+  return a / b % 1;
 }
 
 function remainder (a, b) {
