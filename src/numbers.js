@@ -35,7 +35,13 @@ function absolute (a) {
 }
 
 function quotient (a, b) {
-  return a / b % 1;
+  let var1 = a / b;
+  if (var1 >= 0){
+    return Math.floor(var1);
+} else {
+  return Math.ceil(var1);
+}
+  
 }
 
 function remainder (a, b) {

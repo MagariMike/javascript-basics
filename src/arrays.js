@@ -1,4 +1,8 @@
 const getNthElement = (index, array) => {
+  
+  if(index > array.length-1) {
+    return array[index - array.length];
+  }
   return array[index];
 };
 // ABOVE NEEDS LOOKING AT*/
@@ -47,11 +51,13 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  
+  return numbers.filter(number => number % 2 === 0)
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  
+  return array.filter(item => item !== array[index])
+  
 };
 
 const elementsStartingWithAVowel = strings => {
@@ -62,15 +68,19 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replaceAll(' ','');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((acc, num) => { 
+    return acc + num;
+  },0)
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  const reverseString = item => item.split('').reverse().join('');
+  return strings.map(reverseString).sort().map(reverseString);
+  // return strings.map(word => word.split('').reverse().join('')).sort();
 };
 
 module.exports = {

@@ -36,24 +36,28 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-  // your code here
+ return people.find(person => name === person.name);
 };
 
 const findHondas = cars => {
-  // your code here
+  return cars.filter(car => car.manufacturer === 'Honda')
 };
 
 const averageAge = people => {
-  // your code here
+ const allAges = people.reduce((accAge,currentAge)=> {
+    return accAge + currentAge.age
+  },0)
+  return allAges / people.length;
 };
 
 const createTalkingPerson = (name, age) => {
   return {
-    name: name,
-    age: age,
-    introduce: function (person) {
-      return 'Hi ${person}, my name is ${this.name} and i am ${this.age}!'
+    name,
+    age,
+    introduce: strangersName => {
+      return `Hi ${strangersName}, my name is ${name} and I am ${age}!`
     }
+      
   }
 };
 
