@@ -5,7 +5,7 @@ const getNthElement = (index, array) => {
   }
   return array[index];
 };
-// ABOVE NEEDS LOOKING AT*/
+
 
 const arrayToCSVString = array => { 
   return array.toString();
@@ -80,7 +80,7 @@ const sumNumbers = numbers => {
 const sortByLastLetter = strings => {
   const reverseString = item => item.split('').reverse().join('');
   return strings.map(reverseString).sort().map(reverseString);
-  // return strings.map(word => word.split('').reverse().join('')).sort();
+  
 };
 
 module.exports = {
